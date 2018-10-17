@@ -1,0 +1,275 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+header {
+  background-color: #DC143C;
+  padding: 18px 0px 18px 13px;
+}
+
+header a {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #DC143C;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.8em;
+  padding: 5% 5% 0% 5%;
+  color: #1C3764;
+}
+
+a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.main-gallery {
+  max-width: 908px;
+  margin: 50px auto 0 auto;
+}
+
+.gallery-cell {
+  position: relative;
+  display: inline-block;
+  height:300px;
+  width: 300px;
+  border-radius: 60%;
+  overflow: hidden;
+  margin-right: 0px;
+}
+
+.skills {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border-radius: 60%;
+  overflow: hidden;
+  margin-right: 0px;
+  background-color: #C5E4DF;
+}
+
+.skills:hover {
+  cursor: pointer;
+  transition: ease 0.3s;
+  background-color: #0EB9CB;
+}
+
+a.change_tab {
+  display: block;
+  line-height: 1.5em;
+  color: #1C3764;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h3.cell-copy {
+  padding: 0;
+  margin: -10px 0 0 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+img.cell-image {
+  width: 100%;
+}
+
+#design_foto5 img {
+  width: 70%;
+}
+
+#design_foto_4 img {
+  width: 90%;
+}
+
+footer {
+  background-color: #0EB9CB;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+#footernav {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 2%;
+  margin: auto;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr; /* 3 kolommen */
+  grid-template-rows: 100% 100% 100% 100%; /* 3 rijen */
+  margin: 5% 15% 5% 15%;
+  column-gap: 3%;
+  row-gap: 50px;
+}
+
+#design_foto1 {
+  grid-row: 1;
+}
+
+#design_foto1, #design_foto2, #design_foto3, #design_foto4, #design_foto5 {
+  grid-column: 1;
+}
+
+#design_tekst1, #design_tekst2, #design_tekst3, #design_tekst4, #design_tekst5 {
+  grid-column: 2;
+  font-size: 1.1em;
+}
+
+#design_tekst1 {
+  grid-row: 1;
+}
+
+
+#design_foto2 {
+  grid-row: 2;
+}
+
+#design_tekst2 {
+  grid-row: 2;
+}
+
+#design_foto3 {
+  grid-row: 3;
+}
+
+#design_tekst3 {
+  grid-row: 3;
+}
+
+p {
+  color: white;
+  line-height: 1.5em;
+  background-color: #0EB9CB;
+  padding: 5%;
+}
+
+@media only screen and (max-width:
+  1150px) {
+
+    #grid {
+      grid-template-columns: 1fr 0.5fr; /* 3 kolommen */
+      grid-template-rows: 100% 100% 100% 100%; /* 3 rijen */
+      margin: 5% 8% 5% 8%;
+      column-gap: 2%;
+      row-gap: 50px;
+    }
+  }
+
+
+@media only screen and (max-width:
+  924px) {
+    body {
+      font-size: 90%;
+    }
+
+    #grid {
+      grid-template-columns: 1fr; /* 3 kolommen */
+      grid-template-rows: 100% 100% 100% 100% 100% 100% 100%; /* 3 rijen */
+      margin: 5% 18% 5% 18%;
+      column-gap: 0%;
+      row-gap: 10px;
+    }
+
+    #design_foto1 {
+      grid-row: 1;
+      margin-top: 50px;
+    }
+
+    #design_foto1, #design_foto2, #design_foto3, #design_foto4, #design_foto5 {
+      grid-column: 1;
+    }
+
+    #design_tekst1, #design_tekst2, #design_tekst3, #design_tekst4 {
+      grid-column: 1;
+      font-size: 1.1em;
+      margin-bottom: 70px;
+    }
+
+    #design_tekst5 {
+      grid-column: 1;
+      font-size: 1.1em;
+    }
+
+    #design_tekst1 {
+      grid-row: 2;
+    }
+
+
+    #design_foto2 {
+      grid-row: 3;
+    }
+
+    #design_tekst2 {
+      grid-row: 4;
+    }
+
+    #design_foto3 {
+      grid-row: 5;
+    }
+
+    #design_tekst3 {
+      grid-row: 6;
+    }
+
+    p {
+      color: white;
+      line-height: 1.5em;
+      background-color: #0EB9CB;
+      padding: 3%;
+    }
+
+    .main-gallery{
+      max-width: 605px;
+      margin: 50px auto 0 auto;
+    }
+
+    #design_foto5 img {
+      width: 100%;
+    }
+
+    #design_foto_4 img {
+      width: 100%;
+    }
+
+    footer {
+      background-color: #DC143C;
+
+    }
+  }
+
+  @media only screen and (max-width:
+    450px) {
+
+      .main-gallery{
+        max-width: 300px;
+        margin: 50px auto 0 auto;
+      }
+
+      #grid {
+        margin: 5% 2% 5% 2%;
+      }
+
+    }
