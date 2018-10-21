@@ -42,7 +42,7 @@ a {
 
 .gallery-cell {
   position: relative;
-  display: inline-block;
+  display:inline-grid;
   height:300px;
   width: 300px;
   border-radius: 60%;
